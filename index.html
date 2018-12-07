@@ -1,0 +1,54 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="EN" xml:lang="EN" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- 设置全局链接必须在新窗口打开 -->
+    <meta charset="UTF-8">
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>World Wide Web</title>
+</head>
+
+<body>
+    <h1>World Wide Web</h1>
+    <div class="content">
+        <h2>Main content,This is a heading in a div element</h2>
+        <p>First website's paragraph!This is some text in a <em>div element.</em></p>
+        <p>Second paragraph!</p>
+        <p>这是一段用中文显示的段落！</p>
+        <h3>To do list:</h3>
+        <ul>
+            <li>ONE: html</li>
+            <li>TWO: CSS</li>
+            <li>THREE: JavaScript</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">document.write("<p>A paragraph wrote by <b>JavaScript!</b></p>")</script>
+    <!-- 当浏览器不支持JavaScript时显示下面的语句！ -->
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+    <h2>Test link</h2>
+    <p class="blod"><span>Homepage:</span><a href="index.html"><b> Link</b></a></p>
+    <p class="blod"><span>404 Error:</span><a href="404.html"> 404</a></p>
+    <p class="blod"><span>Video Player:</span><a href="video.html"> Beer and bird</a></p>
+    <p class="blod"><span>Draggable Picture:</span><a href="drag.html"> Drag and drop a picture</a></p>
+
+    <div class="footer">Copyright&copy; <em>Felix</em> <strong>Tunan</strong>&reg;</div>
+
+    <script type="text/javascript">
+
+        if (localStorage.pagecount) {
+            localStorage.pagecount = Number(localStorage.pagecount) + 1;
+        }
+        else {
+            localStorage.pagecount = 1;
+        }
+        document.write("Visits: " + localStorage.pagecount + " time(s).");
+
+    </script>
+</body>
+
+</html>

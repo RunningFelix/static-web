@@ -1,0 +1,15 @@
+a{
+    width:400px;
+    height:400px;
+    border:1px solid black;
+    background-image: url(i/eg_dragdrop_w3school.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px 100px;
+    background-color: black;
+    display: inline-block;
+
+    text-indent:400px;
+    white-space:  nowrap;
+    overflow: hidden;
+}
